@@ -48,7 +48,7 @@ foreach (count_chars($password, 1) as $i => $value) {
 }
 
 if ($password !== null){
-    if ($password === ''){
+    if ($password == ''){
         echo 'Введите строку';
     }
     else{
