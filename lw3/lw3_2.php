@@ -2,17 +2,23 @@
 header('Content-Type: text/plain');
 $text = $_GET['text']; 
 $check = true;
+if($text == ''){
+    echo 'Идентификатор не может содержать пустую строку';
+    $check = false;
+}
+
 if(!ctype_alpha($text[0])){
-  echo 'NO';
+  echo 'Идентификатор не может начинаться с ', $text;
   $check = false;
 }
-for($i = 0; $i < strlen($text); $i++){
-  if(!ctype_alpha($text[$i]) && !is_numeric($text[$i])){
-    echo 'NO';
-    $check = false;
+if ($check !== false){
+  for($i = 0; $i < strlen($text); $i++){
+    if(!ctype_alpha($text[$i]) && !is_numeric($text[$i])){
+      echo 'Идентификатор не может содержать ', $text[$i];
+      $check = false;
+    }
   }
-  break;
 }
 if($check == true){
-    echo 'YEAH!!!'
+    echo 'Значение является идентификатором';
 }
