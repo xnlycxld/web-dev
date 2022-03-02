@@ -6,18 +6,17 @@ if($text == ''){
     echo 'Идентификатор не может содержать пустую строку';
     $check = false;
 }
-
-if(!ctype_alpha($text[0])){
-  echo 'Идентификатор не может начинаться с ', $text;
-  $check = false;
-}
 if ($check !== false){
-  for($i = 0; $i < strlen($text); $i++){
-    if(!ctype_alpha($text[$i]) && !is_numeric($text[$i])){
-      echo 'Идентификатор не может содержать ', $text[$i];
-      $check = false;
+    if(!ctype_alpha($text[0])){
+        echo 'Идентификатор не может начинаться с ', $text[0];
+        $check = false;
     }
-  }
+    for($i = 0; $i < strlen($text); $i++){
+        if(!ctype_alpha($text[$i]) && !is_numeric($text[$i])){
+            echo 'Идентификатор не может содержать ', $text[$i];
+            $check = false;
+        }
+    }
 }
 if($check == true){
     echo 'Значение является идентификатором';
