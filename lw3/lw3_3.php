@@ -52,7 +52,7 @@ if ($password !== null){
         echo 'Введите строку';
     }
     else{
-        echo $reliability;
+        echo 'Надежность пароля = ', $reliability;
     }
 }
 else{
