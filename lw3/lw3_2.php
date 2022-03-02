@@ -1,18 +1,18 @@
 <?php
 header('Content-Type: text/plain');
-
-function CheckIdent($text){
-   if(!ctype_alpha($text[0])){
-      echo 'no идендификатор не может начинаться с ', $text[0];
-      return;
-   }
-   for($i = 0; $i < strlen($text); $i++){
-      if(!ctype_alpha($text[$i]) && !is_numeric($text[$i])){
-         echo 'no символ ', $text[$i], ' является недопустимым символом в индендефикаторе';
-         return;
-      }
-   }
-   echo 'yes';
+$text = $_GET['text']; 
+$check = true;
+if(!ctype_alpha($text[0])){
+  echo 'NO';
+  $check = false;
 }
-
-echo CheckIdent($_GET["identifier"]);
+for($i = 0; $i < strlen($text); $i++){
+  if(!ctype_alpha($text[$i]) && !is_numeric($text[$i])){
+    echo 'NO';
+    $check = false;
+  }
+  break;
+}
+if($check == true){
+    echo 'YEAH!!!'
+}
