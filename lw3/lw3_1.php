@@ -4,6 +4,8 @@ $text = $_GET['text'];
 $ch = '';
 $next = '';
 $start = true;
+
+if ($text !== null){
 for ($i = 0; $i < strlen($text); $i++){
     $ch = $text[$i];
     $next = $text[$i+1];
@@ -16,4 +18,8 @@ for ($i = 0; $i < strlen($text); $i++){
         $start = false;
         echo $ch;
     }
+}
+}
+else{
+    echo 'Введите значние..';
 }
