@@ -3,7 +3,7 @@ header('Content-Type: text/plain');
 $text = $_GET['text']; 
 $check = true;
 
-if($text == ''){
+if($text === '' || $text === null){
     echo 'Идентификатор не может содержать пустую строку';
     $check = false;
 }
@@ -11,7 +11,7 @@ if ($check !== false){
     if(!ctype_alpha($text[0])){
         echo 'Значение '.$text. ' не может начинаться с ', $text[0];
         $check = false;
-    }
+    } //else
 }
 if ($check !== false){
     for($i = 0; $i < strlen($text); $i++){
@@ -21,6 +21,6 @@ if ($check !== false){
         }
     }
 }
-if($check == true){
+if($check === true){
     echo 'Значение '.$text. ' является идентификатором';
 }

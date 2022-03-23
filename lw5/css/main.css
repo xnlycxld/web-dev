@@ -1,0 +1,140 @@
+.text{
+    font-family: 'Roboto Condensed';
+}
+
+.span_color{
+    color: #EE58B6;
+}
+
+.list{
+    list-style-type: none;
+    font: 500 16px 'Montserrat';
+    color: #000;
+}
+
+.button{
+    height: 55px;    
+    background: #05090C;
+    box-sizing: border-box;
+    border-radius: 4.59px;
+    color:#fff;
+    font: 600 16px 'Montserrat';
+}
+
+.button:hover{
+    background: #303030;
+    border-color: #404040;
+}
+
+.button_small{
+    padding: 19px 40px;
+    width: 247px;
+}
+
+.button_big{
+    padding: 19px 82.5px;
+    width: 332px;
+}
+
+.top{
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.top__title{
+    font: 600 100px/1.22 'Montserrat';
+    color: #000;
+}
+
+.top__img{
+    height: 636.87px;
+    width: 762px;
+}
+
+.features{
+    background: #000;
+    color:#fff;
+}
+
+.features__description{
+    font: 400 22px/1.2 'Roboto Condensed';
+    text-align: center;
+}
+
+.features__first-block{
+    width: 286px;
+    height: 145px;
+}
+
+.features__second-block{
+    width: 337px;
+    height: 132px;
+}
+
+.features__third-block{
+    width: 293px;
+    height: 138px;
+}
+
+.reasoning{
+    font-size: 18px;
+    line-height: 135%;
+}
+.reasoning__heading{
+    font: 500 48px/1.26 'Montserrat';
+}
+
+.reasoning__first-block_text{
+    width: 574px;
+    height: 135px;
+}
+
+.reasoning__second-block_text{
+    width: 574px;
+    height: 131px;
+}
+
+.description__heading{
+    font: 500 48px/59px 'Montserrat', sans-serif;
+}
+
+.description__block{
+    width: 358px;
+    height: 190px;
+    background-color: #000;
+    color: #fff;
+    font: 400 18px 'Roboto Condensed'
+}
+
+.description__block1st{
+    padding: 101.23px 48.98px 37.27px 39.25px;
+}
+
+.description__block2nd{
+    padding: 101.23px 48.5px 37.27px 39.74px;
+}
+
+.description__block3d{
+    padding: 101.23px 49.02px 37.27px 39.22px;
+}
+
+.description__block4th{
+    padding: 101.38px 48.98px 37.12px 39.25px;
+}
+
+.description__block5th{
+    padding: 101.38px 48.5px 37.12px 39.74px;
+}
+
+.description__block6th{
+    padding: 101.38px 49.02px 36.62px 39px;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+}
+
+.footer__text{
+    font: 700 30.8354px/122.33% 'Montserrat', sans-serif;
+}
