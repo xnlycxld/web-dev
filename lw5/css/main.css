@@ -108,33 +108,50 @@
 
 .description__block1st{
     padding: 101.23px 48.98px 37.27px 39.25px;
+    border-radius: 7.36px;
 }
 
 .description__block2nd{
     padding: 101.23px 48.5px 37.27px 39.74px;
+    border-radius: 7.36px;
 }
 
 .description__block3d{
     padding: 101.23px 49.02px 37.27px 39.22px;
+    border-radius: 7.36px;
 }
 
 .description__block4th{
     padding: 101.38px 48.98px 37.12px 39.25px;
+    border-radius: 7.36px;
 }
 
 .description__block5th{
     padding: 101.38px 48.5px 37.12px 39.74px;
+    border-radius: 7.36px;
 }
 
 .description__block6th{
     padding: 101.38px 49.02px 36.62px 39px;
+    border-radius: 7.36px;
 }
 
 footer{
     background-color: #000;
     color: #fff;
+    width: 1920px;
+    height: 108px;
+    left: 0px;
+    bottom: 0px;
 }
 
-.footer__text{
-    font: 700 30.8354px/122.33% 'Montserrat', sans-serif;
+.logo__white{
+    position: absolute;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30.8354px;
+    line-height: 122.33%;
+    letter-spacing: -0.045em;
+    color: #FFFFFF;
 }
